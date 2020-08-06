@@ -3,7 +3,6 @@
 HERE="`dirname "$0"`"
 
 sudo cp $HERE /opt/caps -r
-cd /opt/caps
 
 cd /usr/bin
 
