@@ -8,8 +8,15 @@ const Translates = google.translate({
 
 if(process.argv.length < 5)
 {
-    console.log('error : "String" source target');
-    process.exit(333);
+    exit_usage();
+}else
+{
+    process.argv.forEach((value, index) => {
+        if(value == "")
+        {
+            exit_usage();
+        }
+    });
 }
 
 const og_text = process.argv[2];
@@ -25,3 +32,9 @@ Translates.translations.list({
 }).catch((error) => {
     console.log(error.response.data.error.message);
 });
+
+function exit_usage()
+{
+    console.log('Usage : <string> <source> <target>');
+    process.exit(333);
+}
