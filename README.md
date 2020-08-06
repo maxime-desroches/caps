@@ -24,6 +24,9 @@ Wszyscy moi studenci si**ę** ucz**ą**
 
 
 ## Installation
+1. Add your Google Cloud Platform API KEY inside the .env
+
+2. Install caps with:
 ```
 make
 make install
