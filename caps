@@ -2,4 +2,5 @@
 FILE_NAME="`readlink -f "$0"`"
 HERE="`dirname "$FILE_NAME"`"
 
-node "$HERE/app.js" "$1" "$2" "$3"
+cd $HERE
+node "$HERE/caps.js" "$1" "$2" "$3"
