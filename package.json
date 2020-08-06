@@ -4,7 +4,6 @@
   "description": "Translate words to get the right punctuation because I don't have a good keyboard",
   "main": "caps.js",
   "dependencies": {
-    "@google-cloud/translate": "^6.0.2",
     "dotenv": "^8.2.0",
     "googleapis": "^58.0.0"
   },
